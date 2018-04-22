@@ -154,6 +154,7 @@ int main(int argc, char** argv)
         return -1;
     }
     if (width_target != 0 && height_target != 0){
+	cap.set(CV_CAP_PROP_FOURCC ,CV_FOURCC('M', 'J', 'P', 'G') );
         cap.set(CV_CAP_PROP_FRAME_WIDTH, width_target);
         cap.set(CV_CAP_PROP_FRAME_HEIGHT, height_target);
     }
